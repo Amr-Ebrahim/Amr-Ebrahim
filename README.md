@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Amr%20Ebrahim&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%26%20Robotics%20Engineer%20%C2%B7%20Educator&descSize=20&descAlignY=60" alt="Amr Ebrahim banner" width="100%"/>
-
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=2C9AB7&center=true&vCenter=true&width=650&lines=Building+AI+that+sees%2C+talks%2C+and+moves;Medical+Imaging+%C2%B7+Computer+Vision+%C2%B7+LLMs;Robotics+%C2%B7+Embedded+Systems+%C2%B7+Automation;Teaching+the+next+generation+of+AI+builders" alt="Typing animation" />
-</a>
+<img src="./banner.svg" alt="Amr Ebrahim, AI and Robotics Engineer" width="100%"/>
 
 <br/>
 
@@ -130,17 +126,19 @@ class Amr:
 
 ---
 
+<!--
+Optional GitHub stats. The free stats service is often rate-limited, so it is
+disabled by default. To enable: replace YOUR-USERNAME, then delete the
+comment markers around this block.
+
 ## 📊 GitHub Stats
-
-<!-- Replace YOUR-USERNAME with your GitHub username -->
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" width="49%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" width="49%"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR-USERNAME&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" width="49%"/>
-
 </div>
 
 ---
+-->
 
 ## 📫 Let's Connect
 
@@ -151,7 +149,5 @@ I'm always happy to talk about AI, robotics, or teaching.
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-HANDLE)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR-EMAIL@example.com)
 [![Resume](https://img.shields.io/badge/Resume-000000?style=for-the-badge&logo=readthedocs&logoColor=white)](link-to-your-resume.pdf)
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=100&section=footer" alt="footer" width="100%"/>
 
 </div>
