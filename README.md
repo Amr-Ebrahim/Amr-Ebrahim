@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Amr Ebrahim — AI / Machine Learning Engineer. Computer vision, LLM systems and AI automation." />
+  <img src="./banner.svg" width="100%" alt="Amr Ebrahim — AI / Machine Learning Engineer. Computer vision, LLM systems and AI automation." />
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@ The problems I like most sit between research and product: taking something that
 
 ### MedFlow — from a blurry X-ray to an explained diagnosis
 
-<img src="./assets/medflow-pipeline.svg" width="100%" alt="MedFlow pipeline: low-quality chest X-ray, enhanced with SRGAN, classified with EfficientNetV2-M and Swin Transformer, reasoned over by MedGemma, and turned into readable clinical insight." />
+<img src="./medflow-pipeline.svg" width="100%" alt="MedFlow pipeline: low-quality chest X-ray, enhanced with SRGAN, classified with EfficientNetV2-M and Swin Transformer, reasoned over by MedGemma, and turned into readable clinical insight." />
 
 Low-quality scans hide diagnostic detail, and raw model scores are hard for clinicians to interpret.
 MedFlow is a modular pipeline that first restores the image, then detects pneumonia, then uses a medical vision-language model to explain the result in plain language.
@@ -51,7 +51,7 @@ MedFlow is a modular pipeline that first restores the image, then detects pneumo
 
 ### Otto — an offline voice assistant that speaks Arabic and English
 
-<img src="./assets/otto-pipeline.svg" width="100%" alt="Otto pipeline: microphone input, wake word detection with openWakeWord, speech-to-text with whisper.cpp, a local LLM served by llama.cpp, and speech output with Piper TTS." />
+<img src="./otto-pipeline.svg" width="100%" alt="Otto pipeline: microphone input, wake word detection with openWakeWord, speech-to-text with whisper.cpp, a local LLM served by llama.cpp, and speech output with Piper TTS." />
 
 Most voice assistants send your voice to the cloud. Otto runs the whole loop on your own Windows PC: say *"Hey Otto"*, ask in Arabic or English, and it answers out loud — with no cloud requests and no telemetry.
 
