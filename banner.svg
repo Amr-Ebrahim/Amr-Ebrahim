@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Amr Ebrahim — AI / Machine Learning Engineer</title>
+  <desc id="d">Computer vision, LLM systems and AI automation. A waveform moves from coarse low-resolution blocks to fine, enhanced bars.</desc>
+  <defs>
+    <radialGradient id="g1" cx="88%" cy="8%" r="55%">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="62%" cy="100%" r="45%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#8B98B5" fill-opacity=".16"/>
+    </pattern>
+    <clipPath id="card"><rect width="1280" height="400" rx="24"/></clipPath>
+    <clipPath id="pill"><rect x="73" y="288" width="653" height="50" rx="11"/></clipPath>
+  </defs>
+  <style>
+    .p { animation: slot 12s linear infinite; }
+    .cover { animation: type 12s infinite; }
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes slot { 0%, 33.2% { opacity: 1 } 33.3%, 100% { opacity: 0 } }
+    @keyframes type {
+      0%     { transform: translateX(0); animation-timing-function: steps(var(--n)); }
+      13%    { transform: translateX(var(--w)); }
+      27%    { transform: translateX(var(--w)); animation-timing-function: ease-in; }
+      32%, 100% { transform: translateX(0); }
+    }
+    @keyframes blink { 0% { opacity: 1 } 50% { opacity: 0 } }
+    @media (prefers-reduced-motion: reduce) {
+      .p, .cover, .caret { animation: none; }
+      .p + .p { display: none; }
+      .cover { display: none; }
+    }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1280" height="400" fill="#0B1020"/>
+    <rect width="1280" height="400" fill="url(#dots)"/>
+    <rect width="1280" height="400" fill="url(#g1)"/>
+    <rect width="1280" height="400" fill="url(#g2)"/>
+    <rect x="0" y="395" width="1280" height="5" fill="url(#accent)"/>
+  </g>
+  <rect x=".5" y=".5" width="1279" height="399" rx="24" fill="none" stroke="#1F2B47"/>
+
+  <!-- text -->
+  <text x="74" y="104" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="17" letter-spacing="3" fill="#22D3EE">AI / MACHINE LEARNING ENGINEER</text>
+  <text x="70" y="186" font-family="'Segoe UI', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="78" font-weight="700" fill="#E6EDF7">Amr Ebrahim</text>
+  <text x="74" y="236" font-family="'Segoe UI', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="25" fill="#8B98B5">Computer vision  ·  LLM systems  ·  AI automation</text>
+
+  <!-- typing pill -->
+  <rect x="72" y="287" width="655" height="52" rx="12" fill="#121A2E" stroke="#1F2B47"/>
+  <text x="92" y="321" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="22" font-weight="700" fill="#22D3EE">›</text>
+  <g clip-path="url(#pill)">
+  <g class="p" style="animation-delay:0s">
+    <text x="118" y="321" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="22" fill="#E6EDF7" textLength="580.8" lengthAdjust="spacingAndGlyphs">Enhancing chest X-rays with super-resolution</text>
+    <g class="cover" style="--w:580.8px;--n:44;animation-delay:0s">
+      <rect x="116" y="295" width="588.8" height="36" fill="#121A2E"/>
+      <rect class="caret" x="118" y="300" width="3" height="27" rx="1" fill="#22D3EE"/>
+    </g>
+  </g>
+  <g class="p" style="animation-delay:-8s">
+    <text x="118" y="321" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="22" fill="#E6EDF7" textLength="567.6" lengthAdjust="spacingAndGlyphs">Running a bilingual voice assistant offline</text>
+    <g class="cover" style="--w:567.6px;--n:43;animation-delay:-8s">
+      <rect x="116" y="295" width="575.6" height="36" fill="#121A2E"/>
+      <rect class="caret" x="118" y="300" width="3" height="27" rx="1" fill="#22D3EE"/>
+    </g>
+  </g>
+  <g class="p" style="animation-delay:-4s">
+    <text x="118" y="321" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="22" fill="#E6EDF7" textLength="567.6" lengthAdjust="spacingAndGlyphs">Turning raw data into deployed AI pipelines</text>
+    <g class="cover" style="--w:567.6px;--n:43;animation-delay:-4s">
+      <rect x="116" y="295" width="575.6" height="36" fill="#121A2E"/>
+      <rect class="caret" x="118" y="300" width="3" height="27" rx="1" fill="#22D3EE"/>
+    </g>
+  </g>
+  </g>
+
+  <!-- motif: low-res blocks → enhanced waveform -->
+  <g><rect x="824.0" y="136.0" width="30" height="120.0" rx="4" fill="#27D0EE"/><rect x="863.0" y="100.0" width="30" height="192.0" rx="4" fill="#35C9F0"/><rect x="902.0" y="124.0" width="30" height="144.0" rx="4" fill="#42C1F1"/><rect x="941.0" y="172.0" width="30" height="48.0" rx="4" fill="#50BAF2"/><rect x="990.0" y="126.2" width="4" height="139.6" rx="2" fill="#5CB3F3"/><rect x="998.2" y="116.5" width="4" height="158.9" rx="2" fill="#5FB2F4"/><rect x="1006.4" y="108.6" width="4" height="174.7" rx="2" fill="#62B0F4"/><rect x="1014.6" y="102.7" width="4" height="186.7" rx="2" fill="#65AFF4"/><rect x="1022.8" y="98.8" width="4" height="194.4" rx="2" fill="#68ADF4"/><rect x="1031.0" y="97.1" width="4" height="197.7" rx="2" fill="#6BACF5"/><rect x="1039.2" y="97.6" width="4" height="196.7" rx="2" fill="#6EAAF5"/><rect x="1047.4" y="100.2" width="4" height="191.6" rx="2" fill="#70A9F5"/><rect x="1055.6" y="104.7" width="4" height="182.5" rx="2" fill="#73A7F5"/><rect x="1063.8" y="110.9" width="4" height="170.1" rx="2" fill="#76A5F6"/><rect x="1072.0" y="118.6" width="4" height="154.8" rx="2" fill="#79A4F6"/><rect x="1080.2" y="127.3" width="4" height="137.3" rx="2" fill="#7CA2F6"/><rect x="1088.4" y="136.9" width="4" height="118.3" rx="2" fill="#7FA1F6"/><rect x="1096.6" y="146.8" width="4" height="98.4" rx="2" fill="#829FF7"/><rect x="1104.8" y="156.8" width="4" height="78.3" rx="2" fill="#849EF7"/><rect x="1113.0" y="166.6" width="4" height="58.8" rx="2" fill="#879CF7"/><rect x="1121.2" y="175.8" width="4" height="40.5" rx="2" fill="#8A9BF7"/><rect x="1129.4" y="170.1" width="4" height="51.8" rx="2" fill="#8D99F8"/><rect x="1137.6" y="162.8" width="4" height="66.5" rx="2" fill="#9098F8"/><rect x="1145.8" y="156.7" width="4" height="78.7" rx="2" fill="#9396F8"/><rect x="1154.0" y="151.8" width="4" height="88.3" rx="2" fill="#9694F8"/><rect x="1162.2" y="148.3" width="4" height="95.3" rx="2" fill="#9893F9"/><rect x="1170.4" y="146.2" width="4" height="99.7" rx="2" fill="#9B91F9"/><rect x="1178.6" y="145.2" width="4" height="101.5" rx="2" fill="#9E90F9"/><rect x="1186.8" y="145.4" width="4" height="101.1" rx="2" fill="#A18EF9"/><rect x="1195.0" y="146.6" width="4" height="98.8" rx="2" fill="#A48DFA"/></g>
+  <line x1="824" y1="196" x2="1206" y2="196" stroke="#E6EDF7" stroke-opacity=".08"/>
+  <text x="824" y="335.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="14" fill="#8B98B5">low-res</text>
+  <text x="1206" y="335.0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="14" fill="#8B98B5">enhanced</text>
+</svg>
