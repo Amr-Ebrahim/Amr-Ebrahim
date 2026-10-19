@@ -1,176 +1,138 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/banner.svg" width="100%" alt="Amr Ebrahim — AI / Machine Learning Engineer. Computer vision, LLM systems and AI automation." />
+</p>
 
-<img src="./banner.svg" alt="Amr Ebrahim, AI and Machine Learning Engineer" width="100%"/>
+<p align="center">
+  <a href="https://www.linkedin.com/in/amr-ebrahim-el-sayed">LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:amr433606@gmail.com">Email</a>
+  &nbsp;·&nbsp;
+  <a href="https://ieeexplore.ieee.org/document/11417605/">IEEE paper</a>
+  &nbsp;·&nbsp;
+  Alexandria, Egypt
+</p>
 
-<br/>
+<br />
 
-![Location](https://img.shields.io/badge/📍_Alexandria,_Egypt-2C5364?style=for-the-badge)
-![University](https://img.shields.io/badge/🎓_E--JUST_·_Class_of_2026-203A43?style=for-the-badge)
-![Status](https://img.shields.io/badge/🟢_Open_to_work-2EA44F?style=for-the-badge)
+I build AI systems end to end — from messy input data to a model that runs inside a working pipeline.
+The problems I like most sit between research and product: taking something that works in a notebook and turning it into a tool people can actually use.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/amr-ebrahim-el-sayed)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:amr433606@gmail.com)
-[![Resume](https://img.shields.io/badge/Resume-PDF-black?style=flat-square&logo=readthedocs&logoColor=white)](./Amr_Ebrahims_Resume.pdf)
+- **Medical imaging research** — co-authored a peer-reviewed paper (JAC-ECC 2025, IEEE Xplore) on how super-resolution changes the diagnostic accuracy of chest X-ray models.
+- **LLMs that run locally** — built Otto, a voice assistant that listens, thinks and answers in Arabic and English, fully offline.
+- **Automation & data** — build no-code AI workflows with Make and n8n; SQL, dashboards and exploratory analysis from my data analytics work.
+- **Teaching** — design and teach AI and robotics courses, from Arduino programming to AI tools for non-technical students.
 
-</div>
+<sub>B.Sc. Computer Science & Engineering · Egypt-Japan University of Science and Technology (E-JUST), 2021–2026 · Arabic (native) · English (fluent)</sub>
 
----
+<br />
 
-## 👋 About Me
+## Featured work
 
-I'm an **AI / Machine Learning Engineer** focused on building end-to-end AI solutions, from raw data and model development to deployment and automation. I study Computer Science and Engineering at **E-JUST** (Egypt-Japan University of Science and Technology, 2021–2026) and work as an **AI & Robotics Instructor / Engineer at Smart Technology**.
+### MedFlow — from a blurry X-ray to an explained diagnosis
 
-My work sits where machine learning meets the real world: medical imaging research, computer vision, LLM systems, and robotics prototypes.
+<img src="./assets/medflow-pipeline.svg" width="100%" alt="MedFlow pipeline: low-quality chest X-ray, enhanced with SRGAN, classified with EfficientNetV2-M and Swin Transformer, reasoned over by MedGemma, and turned into readable clinical insight." />
 
-| | |
-|---|---|
-| 🧠 **AI / ML** | Deep learning, computer vision, LLMs, medical imaging |
-| 🤖 **Robotics** | Arduino, Raspberry Pi, sensor control, PID, voice and vision assistants |
-| ⚙️ **Automation** | n8n and Make.com workflows that connect AI tools to everyday apps |
-| 📊 **Data** | Python, SQL, R, Tableau, Excel dashboards and reporting |
+Low-quality scans hide diagnostic detail, and raw model scores are hard for clinicians to interpret.
+MedFlow is a modular pipeline that first restores the image, then detects pneumonia, then uses a medical vision-language model to explain the result in plain language.
 
----
+| Stage | Metric | Result |
+| :-- | :-- | :-- |
+| Super-resolution (SRGAN) | PSNR / SSIM | **49.37 dB** / **0.996** |
+| Pneumonia detection | Accuracy / F1 | **93.11%** / **0.9374** |
+| Effect of super-resolution (paper) | AUC | up to **+19%** |
 
-## 🛠️ Tech Stack
+**My part:** built the AI research pipeline — the super-resolution and classification models (CNN, EfficientNetV2-M, Swin Transformer) and their benchmarks — and integrated Google's MedGemma for clinical reasoning. Co-authored the resulting paper.
 
-<div align="center">
+`Python` `PyTorch` `SRGAN` `EfficientNetV2-M` `Swin Transformer` `MedGemma`
 
-<img src="https://skillicons.dev/icons?i=py,cpp,r,pytorch,tensorflow,opencv,pandas,numpy,flask,fastapi,docker,arduino,raspberrypi,git,linux&perline=8" alt="Core stack icons" />
+[Paper on IEEE Xplore](https://ieeexplore.ieee.org/document/11417605/) &nbsp;·&nbsp; [Team repository](https://github.com/Assem-ElQersh/MedFlow-V2)
 
-<br/><br/>
+<br />
 
-![SQL](https://img.shields.io/badge/SQL-07405E?style=flat-square&logo=sqlite&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat-square&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![Make](https://img.shields.io/badge/Make.com-6D00CC?style=flat-square&logo=make&logoColor=white)
+### Otto — an offline voice assistant that speaks Arabic and English
 
-</div>
+<img src="./assets/otto-pipeline.svg" width="100%" alt="Otto pipeline: microphone input, wake word detection with openWakeWord, speech-to-text with whisper.cpp, a local LLM served by llama.cpp, and speech output with Piper TTS." />
 
-```python
-class Amr:
-    languages  = ["Python", "SQL", "R", "C++", "Embedded C"]
-    ml_dl      = ["PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face Transformers"]
-    vision     = ["OpenCV", "YOLO", "Segmentation", "Vision Transformers", "GANs", "Super-Resolution"]
-    concepts   = ["NLP", "CNNs", "Transformers", "LLMs", "Prompt Engineering", "Clustering"]
-    data       = ["Pandas", "NumPy", "Seaborn", "Tableau", "Power BI", "Excel"]
-    hardware   = ["Arduino", "Microcontrollers", "Embedded systems"]
-    tools      = ["Git", "GitHub", "Docker", "Flask/FastAPI", "Jupyter", "Make.com", "n8n", "Linux/Bash"]
-```
+Most voice assistants send your voice to the cloud. Otto runs the whole loop on your own Windows PC: say *"Hey Otto"*, ask in Arabic or English, and it answers out loud — with no cloud requests and no telemetry.
 
----
+**How it works:** wake-word detection (openWakeWord) → speech-to-text (whisper.cpp) → a local LLM served by llama.cpp → neural text-to-speech (Piper, with English and Arabic voices).
 
-## 🚀 Featured Projects
+**My part:** designed and built the full pipeline.
 
-### 🩻 MedFlow: Disease Detection & Super-Resolution System — *Graduation Project · Published Research (2025)*
+`Python` `openWakeWord` `whisper.cpp` `llama.cpp` `Piper TTS` `Local LLMs`
 
-> A modular end-to-end AI pipeline that takes chest X-rays through **image super-resolution**, **deep learning classification**, and **LLM-based clinical reasoning**.
+[Repository](https://github.com/Amr-Ebrahim/Otto-Assistant)
 
-- Enhanced low-quality scans with **SRGAN**, reaching **49.37 dB PSNR** and **0.996 SSIM**
-- Benchmarked CNN, EfficientNetV2-M, and Swin Transformer models, reaching **93.11% accuracy** and **0.9374 F1-score** for pneumonia detection
-- Integrated Google's **Med-Gemma** for multimodal clinical reasoning
-- Built in **Python** and **PyTorch**; the work formed the basis of a peer-reviewed paper published at **JAC-ECC 2025**
+<br />
 
-`Deep Learning` · `Medical Imaging` · `Super-Resolution` · `Med-Gemma` · `PyTorch`
+## Toolkit
 
----
+<table>
+  <tr>
+    <td width="190"><b>AI &amp; deep learning</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv" height="36" alt="PyTorch, TensorFlow, scikit-learn, OpenCV" /><br />
+      <code>Hugging Face Transformers</code> <code>CNNs</code> <code>Vision Transformers</code> <code>GANs</code> <code>Super-resolution</code> <code>YOLO</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>LLMs &amp; speech</b></td>
+    <td>
+      <code>MedGemma</code> <code>llama.cpp</code> <code>whisper.cpp</code> <code>Piper TTS</code> <code>openWakeWord</code> <code>Prompt engineering</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Languages</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=py,r,cpp,c,bash" height="36" alt="Python, R, C++, C, Bash" /><br />
+      <code>SQL</code> <code>Embedded C</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Data &amp; analytics</b></td>
+    <td>
+      <code>Pandas</code> <code>NumPy</code> <code>Seaborn</code> <code>Tableau</code> <code>Power BI</code> <code>Excel</code> <code>EDA</code> <code>Clustering</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Automation &amp; backend</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=docker,fastapi,flask" height="36" alt="Docker, FastAPI, Flask" /><br />
+      <code>Make</code> <code>n8n</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Hardware &amp; tools</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=arduino,git,github,linux" height="36" alt="Arduino, Git, GitHub, Linux" /><br />
+      <code>Microcontrollers</code> <code>Embedded systems</code> <code>Jupyter</code>
+    </td>
+  </tr>
+</table>
 
-### 🤖 Otto: Offline AI Voice & Vision Assistant
+<br />
 
-> A fully local, free, **no-paid-API** assistant for an Otto robot with a screen, camera, and microphone.
+## Publication
 
-- Sees, talks, and holds a full conversation, all offline
-- Runs locally on a GPU machine
-- Supports **English and Arabic**, including Arabic speech recognition
+**A Systematic Framework for Evaluating the Diagnostic Impact of Super-Resolution Models in Medical Imaging** — JAC-ECC 2025 · [IEEE Xplore](https://ieeexplore.ieee.org/document/11417605/)
 
-`Speech Recognition` · `Computer Vision` · `Local LLMs` · `Raspberry Pi`
+Benchmarks CNN-, GAN- and Transformer-based super-resolution models under domain shift, shows up to a 19% AUC improvement in pneumonia detection, and proposes guidelines for using super-resolution safely in clinical imaging.
 
----
+<br />
 
-### More Projects
+## Experience
 
-| Project | What it does | Tech |
-|---|---|---|
-| 🛒 **Customer Behavior Analytics** (Oct 2024) | Cleaned e-commerce sales data, segmented customers with K-Means, and used association rule mining to find co-purchased products | `Python` `Pandas` `Seaborn` `K-Means` |
-| 🏎️ **PID Line Follower Car** | Line-following car with IR-sensor feedback and PID control | `Arduino` `C++` `PID` |
-| 💬 **WhatsApp Student Messaging** | Keyword menu-based, student-initiated messaging pipeline designed to avoid Meta ban risk, with a full workflow document | `n8n` |
-| 📋 **Daily Report Automation** | Google Form → Excel → AI paraphrase → Gmail to manager, plus a confirmation email to each employee | `Make.com` `Gmail` `LLM` |
-| 📚 **Data Science & AI Curriculum** | 48 lectures in four courses (Data Analysis, Machine Learning, Deep Learning 1 & 2) for ages 13–16 | `Curriculum Design` |
+**AI & Robotics Instructor / Engineer** · 2026 – present<br />
+Design and teach a hands-on robotics and embedded-systems curriculum (Arduino, microcontroller programming), a complete AI Tools course for non-technical university students, and no-code automation lessons where students connect AI tools to everyday apps with Make and n8n.
 
----
+**Data Analytics Intern** · 2024<br />
+Built interactive dashboards and reporting pipelines in Excel and Tableau, queried relational databases with SQL, and ran data cleaning, EDA and visualization in Python and R.
 
-## 📄 Publication
+<br />
 
-**A Systematic Framework for Evaluating the Diagnostic Impact of Super-Resolution Models in Medical Imaging** (2025)
-
-- Benchmarked CNN-, GAN-, and Transformer-based super-resolution models under domain shift
-- Achieved up to a **19% improvement in AUC** for pneumonia detection
-- Proposed clinical guidelines for safe deployment of super-resolution in medical imaging
-
----
-
-## 💼 Experience
-
-**AI & Robotics Instructor / Engineer** · Smart Technology · *Apr 2026 – Present* · Alexandria, Egypt
-
-- Designed and delivered hands-on robotics and embedded-systems curriculum (Arduino, microcontroller programming) for learners of varying skill levels
-- Built a complete **AI Tools** course for non-technical university students, turning complex AI concepts into accessible, applied lessons
-- Introduced no-code automation with **Make.com** and **n8n**, teaching students to build workflows that connect AI tools with everyday apps
-
-**Data Analytics Intern** · Digital Egypt Pioneers Initiative (DEPI) · *May 2024 – Oct 2024* · Alexandria, Egypt
-
-- Built interactive dashboards and reporting pipelines in **Excel** and **Tableau** to support leadership decisions across multiple business functions
-- Queried and extracted data with **SQL** from multiple relational databases for consistent downstream reporting
-- Performed data cleaning, EDA, and visualization with **Python** and **R**
-
----
-
-## 🎓 Education
-
-**B.Sc. in Computer Science and Engineering**: Egypt-Japan University of Science and Technology (E-JUST), 2021 – 2026
-
-*Relevant coursework:* Artificial Intelligence, Deep Learning, Computer Vision, Data Analysis, Large Language Models
-
----
-
-## 🤝 Leadership
-
-**PR Member, Enactus @ E-JUST** · 2022 – 2023: promoted projects and events through outreach campaigns and created communication materials for students, partners, and sponsors.
-
----
-
-## 🌱 Currently
-
-- 🤖 Building and refining the Otto assistant
-- 🔎 Looking for a Machine Learning / AI Engineer or Data Scientist role
-
-**Languages:** Arabic (native) · English (fluent, professional working proficiency)
-
----
-
-<!--
-Optional GitHub stats. The free stats service is often rate-limited, so it is
-disabled by default. To enable it, delete the comment markers around this block.
-
-## 📊 GitHub Stats
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Amr-Ebrahim&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" width="49%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amr-Ebrahim&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" width="49%"/>
-</div>
-
----
--->
-
-## 📫 Let's Connect
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/amr-ebrahim-el-sayed)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amr433606@gmail.com)
-[![Resume](https://img.shields.io/badge/Resume-000000?style=for-the-badge&logo=readthedocs&logoColor=white)](./Amr_Ebrahims_Resume.pdf)
-
-</div>
+<p align="center">
+  Open to <b>AI / ML Engineer</b> roles, as well as AI automation and data roles.<br />
+  <a href="https://www.linkedin.com/in/amr-ebrahim-el-sayed">LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:amr433606@gmail.com">amr433606@gmail.com</a>
+</p>
