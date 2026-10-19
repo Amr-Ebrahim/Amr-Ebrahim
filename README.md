@@ -118,18 +118,6 @@ Most voice assistants send your voice to the cloud. Otto runs the whole loop on 
 
 Benchmarks CNN-, GAN- and Transformer-based super-resolution models under domain shift, shows up to a 19% AUC improvement in pneumonia detection, and proposes guidelines for using super-resolution safely in clinical imaging.
 
-<br />
-
-## Experience
-
-**AI & Robotics Instructor / Engineer** · 2026 – present<br />
-Design and teach a hands-on robotics and embedded-systems curriculum (Arduino, microcontroller programming), a complete AI Tools course for non-technical university students, and no-code automation lessons where students connect AI tools to everyday apps with Make and n8n.
-
-**Data Analytics Intern** · 2024<br />
-Built interactive dashboards and reporting pipelines in Excel and Tableau, queried relational databases with SQL, and ran data cleaning, EDA and visualization in Python and R.
-
-<br />
-
 <p align="center">
   Open to <b>AI / ML Engineer</b> roles, as well as AI automation and data roles.<br />
   <a href="https://www.linkedin.com/in/amr-ebrahim-el-sayed">LinkedIn</a>
